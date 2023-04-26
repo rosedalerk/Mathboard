@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		872C1A4229F9506D00AB8A68 /* Symbols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872C1A4129F9506D00AB8A68 /* Symbols.swift */; };
+		872C1A4229F9506D00AB8A68 /* Symbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872C1A4129F9506D00AB8A68 /* Symbol.swift */; };
 		87989E6929F93DA600E65E97 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87989E6829F93DA600E65E97 /* AppDelegate.swift */; };
 		87989E6B29F93DA600E65E97 /* ExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87989E6A29F93DA600E65E97 /* ExampleViewController.swift */; };
 		87989E6E29F93DA600E65E97 /* Mathboard.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 87989E6C29F93DA600E65E97 /* Mathboard.xcdatamodeld */; };
@@ -19,7 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		872C1A4129F9506D00AB8A68 /* Symbols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Symbols.swift; sourceTree = "<group>"; };
+		872C1A4129F9506D00AB8A68 /* Symbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Symbol.swift; sourceTree = "<group>"; };
 		87989E6529F93DA600E65E97 /* Mathboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mathboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87989E6829F93DA600E65E97 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		87989E6A29F93DA600E65E97 /* ExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleViewController.swift; sourceTree = "<group>"; };
@@ -87,7 +87,7 @@
 		87CDDE3D29F94B420091A470 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				872C1A4129F9506D00AB8A68 /* Symbols.swift */,
+				872C1A4129F9506D00AB8A68 /* Symbol.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -162,7 +162,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				872C1A4229F9506D00AB8A68 /* Symbols.swift in Sources */,
+				872C1A4229F9506D00AB8A68 /* Symbol.swift in Sources */,
 				87EB90B229F9724500860691 /* RoundedTextField.swift in Sources */,
 				87EB90B429F973F900860691 /* HelloWindowController.swift in Sources */,
 				87989E6B29F93DA600E65E97 /* ExampleViewController.swift in Sources */,
