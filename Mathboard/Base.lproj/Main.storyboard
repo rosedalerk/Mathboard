@@ -683,12 +683,27 @@
         <!--Window Controller-->
         <scene sceneID="R2V-B0-nI4">
             <objects>
-                <windowController id="B8D-0N-5wS" sceneMemberID="viewController">
-                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
+                <windowController id="B8D-0N-5wS" customClass="HelloWindowController" customModule="Mathboard" customModuleProvider="target" sceneMemberID="viewController">
+                    <window key="window" title="Mathboard" separatorStyle="none" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" toolbarStyle="preference" id="IQv-IB-iLA">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
                         <rect key="contentRect" x="196" y="240" width="352" height="128"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="2048" height="1255"/>
+                        <toolbar key="toolbar" implicitIdentifier="E63F34B2-5012-4B8C-B117-D4AADD093420" autosavesConfiguration="NO" displayMode="iconAndLabel" sizeMode="regular" id="cZa-4V-Ol0">
+                            <allowedToolbarItems>
+                                <toolbarItem implicitItemIdentifier="NSToolbarShowColorsItem" id="BKq-7y-6Qu"/>
+                                <toolbarItem implicitItemIdentifier="NSToolbarShowFontsItem" id="fUm-vz-rXc"/>
+                                <toolbarItem implicitItemIdentifier="NSToolbarPrintItem" id="Qk5-A8-Q5Z"/>
+                                <toolbarItem implicitItemIdentifier="NSToolbarSpaceItem" id="aOW-av-GPj"/>
+                                <toolbarItem implicitItemIdentifier="NSToolbarFlexibleSpaceItem" id="LyJ-G3-FXX"/>
+                            </allowedToolbarItems>
+                            <defaultToolbarItems>
+                                <toolbarItem reference="BKq-7y-6Qu"/>
+                                <toolbarItem reference="fUm-vz-rXc"/>
+                                <toolbarItem reference="LyJ-G3-FXX"/>
+                                <toolbarItem reference="Qk5-A8-Q5Z"/>
+                            </defaultToolbarItems>
+                        </toolbar>
                         <connections>
                             <outlet property="delegate" destination="B8D-0N-5wS" id="98r-iN-zZc"/>
                         </connections>
@@ -699,7 +714,7 @@
                 </windowController>
                 <customObject id="Oky-zY-oP4" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="37" y="192"/>
+            <point key="canvasLocation" x="30" y="214"/>
         </scene>
         <!--Example View Controller-->
         <scene sceneID="uvq-YW-wjH">

@@ -2,10 +2,11 @@ import Cocoa
 
 class ExampleCollectionViewItem: NSCollectionViewItem {
     
-    let imageIndex: Int
+    let text: String
+    var label: NSTextField!
     
-    init(imageIndex: Int) {
-        self.imageIndex = imageIndex
+    init(text: String) {
+        self.text = text
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -20,17 +21,43 @@ class ExampleCollectionViewItem: NSCollectionViewItem {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let imageView = NSImageView()
-        imageView.translatesAutoresizingMaskIntoConstraints = false
-        imageView.image = NSImage(named: "image\(imageIndex)") // Load image based on imageIndex
-        imageView.imageScaling = .scaleProportionallyUpOrDown
-        self.view.addSubview(imageView)
+        label = RoundedTextField()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.stringValue = text
+        label.isEditable = false
+        label.isBordered = false
+        label.drawsBackground = false
+        label.alignment = .center
+        label.font = NSFont.systemFont(ofSize: 30) // Adjust font size
+        self.view.addSubview(label)
 
         NSLayoutConstraint.activate([
-            imageView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            imageView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            imageView.topAnchor.constraint(equalTo: view.topAnchor),
-            imageView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
+            label.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            label.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            label.centerYAnchor.constraint(equalTo: view.centerYAnchor)
         ])
+
+        // Add click handler
+        let recognizer = NSClickGestureRecognizer(target: self, action: #selector(handleClick))
+        self.view.addGestureRecognizer(recognizer)
     }
+
+    @objc func handleClick() {
+        print("CollectionView item clicked: \(text)")
+
+        let pasteboard = NSPasteboard.general
+        pasteboard.clearContents()
+        pasteboard.setString(text, forType: .string)
+
+        // Flash the background
+        label.backgroundColor = NSColor.darkGray
+        NSAnimationContext.runAnimationGroup({ context in
+            context.duration = 0.2
+            label.animator().backgroundColor = NSColor.white
+        })
+    }
+
+
+
+
 }

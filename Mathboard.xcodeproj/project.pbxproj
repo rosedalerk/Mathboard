@@ -14,6 +14,8 @@
 		87989E7029F93DA800E65E97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87989E6F29F93DA800E65E97 /* Assets.xcassets */; };
 		87989E7329F93DA800E65E97 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87989E7129F93DA800E65E97 /* Main.storyboard */; };
 		87CDDE3F29F94C990091A470 /* ExampleCollectionViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87CDDE3E29F94C990091A470 /* ExampleCollectionViewItem.swift */; };
+		87EB90B229F9724500860691 /* RoundedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EB90B129F9724500860691 /* RoundedTextField.swift */; };
+		87EB90B429F973F900860691 /* HelloWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EB90B329F973F900860691 /* HelloWindowController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		87989E7229F93DA800E65E97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		87989E7429F93DA800E65E97 /* Mathboard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Mathboard.entitlements; sourceTree = "<group>"; };
 		87CDDE3E29F94C990091A470 /* ExampleCollectionViewItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleCollectionViewItem.swift; sourceTree = "<group>"; };
+		87EB90B129F9724500860691 /* RoundedTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedTextField.swift; sourceTree = "<group>"; };
+		87EB90B329F973F900860691 /* HelloWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloWindowController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,7 +77,9 @@
 			isa = PBXGroup;
 			children = (
 				87CDDE3E29F94C990091A470 /* ExampleCollectionViewItem.swift */,
+				87EB90B129F9724500860691 /* RoundedTextField.swift */,
 				87989E6A29F93DA600E65E97 /* ExampleViewController.swift */,
+				87EB90B329F973F900860691 /* HelloWindowController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -157,6 +163,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				872C1A4229F9506D00AB8A68 /* Symbols.swift in Sources */,
+				87EB90B229F9724500860691 /* RoundedTextField.swift in Sources */,
+				87EB90B429F973F900860691 /* HelloWindowController.swift in Sources */,
 				87989E6B29F93DA600E65E97 /* ExampleViewController.swift in Sources */,
 				87CDDE3F29F94C990091A470 /* ExampleCollectionViewItem.swift in Sources */,
 				87989E6E29F93DA600E65E97 /* Mathboard.xcdatamodeld in Sources */,
