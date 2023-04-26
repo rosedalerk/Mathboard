@@ -72,8 +72,8 @@
 		87CDDE3A29F94B230091A470 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				87989E6A29F93DA600E65E97 /* ExampleViewController.swift */,
 				87CDDE3E29F94C990091A470 /* ExampleCollectionViewItem.swift */,
+				87989E6A29F93DA600E65E97 /* ExampleViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";

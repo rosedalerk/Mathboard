@@ -2,6 +2,17 @@ import Cocoa
 
 class ExampleCollectionViewItem: NSCollectionViewItem {
     
+    let imageIndex: Int
+    
+    init(imageIndex: Int) {
+        self.imageIndex = imageIndex
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+
     override func loadView() {
         view = NSView()
     }
@@ -11,7 +22,7 @@ class ExampleCollectionViewItem: NSCollectionViewItem {
 
         let imageView = NSImageView()
         imageView.translatesAutoresizingMaskIntoConstraints = false
-        imageView.image = NSImage(named: "exampleImage")
+        imageView.image = NSImage(named: "image\(imageIndex)") // Load image based on imageIndex
         imageView.imageScaling = .scaleProportionallyUpOrDown
         self.view.addSubview(imageView)
 

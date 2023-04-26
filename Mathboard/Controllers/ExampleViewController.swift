@@ -33,11 +33,12 @@ class ExampleViewController: NSViewController {
 
 extension ExampleViewController: NSCollectionViewDataSource {
     func collectionView(_ collectionView: NSCollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 12 // Set the number of items to display
+        return 10 // Set the number of items to display
     }
 
     func collectionView(_ collectionView: NSCollectionView, itemForRepresentedObjectAt indexPath: IndexPath) -> NSCollectionViewItem {
-        let item = collectionView.makeItem(withIdentifier: NSUserInterfaceItemIdentifier("ExampleCollectionViewItem"), for: indexPath) as! ExampleCollectionViewItem
+        let item = ExampleCollectionViewItem(imageIndex: indexPath.item + 1)
+        collectionView.register(ExampleCollectionViewItem.self, forItemWithIdentifier: NSUserInterfaceItemIdentifier("ExampleCollectionViewItem\(item.imageIndex)"))
         return item
     }
 }
