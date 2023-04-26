@@ -1,5 +1,5 @@
 # Mathboard
-A math software keyboard for mac.
+Math software keyboard for mac.
 
 So you can type things like x∈ℝ and ℚ⊆ℝ much more quickly.
 
