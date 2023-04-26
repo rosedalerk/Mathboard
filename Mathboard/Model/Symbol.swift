@@ -23,6 +23,7 @@ struct SymbolsData {
     static let symbols = [
         Symbol(glyph: "ℝ", name: "Double-struck Capital R"),
         Symbol(glyph: "ℂ", name: "Double-struck Capital C"),
+        Symbol(glyph: "𝔻", name: "Double-struck Capital D"),
         Symbol(glyph: "∎", name: "End of Proof"),
         Symbol(glyph: "ℚ", name: "Double-struck Capital Q"),
         Symbol(glyph: "∞", name: "Infinity"),
@@ -130,5 +131,59 @@ struct SymbolsData {
         Symbol(glyph: "x", name: "Lowercase x"),
         Symbol(glyph: "y", name: "Lowercase y"),
         Symbol(glyph: "z", name: "Lowercase z")
+    ]
+    
+    static let lowercaseGreek = [
+        Symbol(glyph: "α", name: "Lowercase alpha"),
+        Symbol(glyph: "β", name: "Lowercase beta"),
+        Symbol(glyph: "γ", name: "Lowercase gamma"),
+        Symbol(glyph: "δ", name: "Lowercase delta"),
+        Symbol(glyph: "ε", name: "Lowercase epsilon"),
+        Symbol(glyph: "ζ", name: "Lowercase zeta"),
+        Symbol(glyph: "η", name: "Lowercase eta"),
+        Symbol(glyph: "θ", name: "Lowercase theta"),
+        Symbol(glyph: "ι", name: "Lowercase iota"),
+        Symbol(glyph: "κ", name: "Lowercase kappa"),
+        Symbol(glyph: "λ", name: "Lowercase lambda"),
+        Symbol(glyph: "μ", name: "Lowercase mu"),
+        Symbol(glyph: "ν", name: "Lowercase nu"),
+        Symbol(glyph: "ξ", name: "Lowercase xi"),
+        Symbol(glyph: "ο", name: "Lowercase omicron"),
+        Symbol(glyph: "π", name: "Lowercase pi"),
+        Symbol(glyph: "ρ", name: "Lowercase rho"),
+        Symbol(glyph: "σ", name: "Lowercase sigma"),
+        Symbol(glyph: "τ", name: "Lowercase tau"),
+        Symbol(glyph: "υ", name: "Lowercase upsilon"),
+        Symbol(glyph: "φ", name: "Lowercase phi"),
+        Symbol(glyph: "χ", name: "Lowercase chi"),
+        Symbol(glyph: "ψ", name: "Lowercase psi"),
+        Symbol(glyph: "ω", name: "Lowercase omega")
+    ]
+    
+    static let uppercaseGreek = [
+        Symbol(glyph: "Α", name: "Uppercase alpha"),
+        Symbol(glyph: "Β", name: "Uppercase beta"),
+        Symbol(glyph: "Γ", name: "Uppercase gamma"),
+        Symbol(glyph: "Δ", name: "Uppercase delta"),
+        Symbol(glyph: "Ε", name: "Uppercase epsilon"),
+        Symbol(glyph: "Ζ", name: "Uppercase zeta"),
+        Symbol(glyph: "Η", name: "Uppercase eta"),
+        Symbol(glyph: "Θ", name: "Uppercase theta"),
+        Symbol(glyph: "Ι", name: "Uppercase iota"),
+        Symbol(glyph: "Κ", name: "Uppercase kappa"),
+        Symbol(glyph: "Λ", name: "Uppercase lambda"),
+        Symbol(glyph: "Μ", name: "Uppercase mu"),
+        Symbol(glyph: "Ν", name: "Uppercase nu"),
+        Symbol(glyph: "Ξ", name: "Uppercase xi"),
+        Symbol(glyph: "Ο", name: "Uppercase omicron"),
+        Symbol(glyph: "Π", name: "Uppercase pi"),
+        Symbol(glyph: "Ρ", name: "Uppercase rho"),
+        Symbol(glyph: "Σ", name: "Uppercase sigma"),
+        Symbol(glyph: "Τ", name: "Uppercase tau"),
+        Symbol(glyph: "Υ", name: "Uppercase upsilon"),
+        Symbol(glyph: "Φ", name: "Uppercase phi"),
+        Symbol(glyph: "Χ", name: "Uppercase chi"),
+        Symbol(glyph: "Ψ", name: "Uppercase psi"),
+        Symbol(glyph: "Ω", name: "Uppercase omega")
     ]
 }
