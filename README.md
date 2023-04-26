@@ -1,5 +1,5 @@
 # Mathboard
-A math software keyboard for mac.
+A math software keyboard for mac. Download [here.](https://github.com/rosedalerk/Mathboard/releases)
 
 
 ![Mathboard Pre-alpha](https://github.com/rosedalerk/Mathboard/blob/main/Mathboard%20Pre-alpha.png)
