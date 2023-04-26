@@ -1,7 +1,7 @@
 # Mathboard
 Math software keyboard for mac.
 
-So you can type things like x∈ℝ and ℚ⊆ℝ much more quickly.
+So you can type things like ∀x∈ℝ∃ x^2 ∈ℝ much more quickly than before. Especially useful for chatGPT.
 
 Download [here.](https://github.com/rosedalerk/Mathboard/releases)
 
