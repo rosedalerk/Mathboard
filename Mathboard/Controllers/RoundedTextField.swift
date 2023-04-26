@@ -10,10 +10,10 @@ class RoundedTextField: NSTextField {
         super.draw(dirtyRect)
     }
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        self.isBordered = false
-        self.drawsBackground = true
-        self.backgroundColor = .white
-    }
+//    override func awakeFromNib() {
+//        super.awakeFromNib()
+////        self.isBordered = true
+////        self.drawsBackground = false
+////        self.backgroundColor = .clear
+//    }
 }

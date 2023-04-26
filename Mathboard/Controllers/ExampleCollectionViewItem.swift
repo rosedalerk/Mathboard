@@ -56,8 +56,4 @@ class ExampleCollectionViewItem: NSCollectionViewItem {
             label.animator().backgroundColor = NSColor.white
         })
     }
-
-
-
-
 }

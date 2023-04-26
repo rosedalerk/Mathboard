@@ -19,7 +19,7 @@ class ExampleViewController: NSViewController {
         collectionView.collectionViewLayout = flowLayout
         collectionView.register(ExampleCollectionViewItem.self, forItemWithIdentifier: NSUserInterfaceItemIdentifier("ExampleCollectionViewItem"))
         collectionView.dataSource = self
-//        collectionView.backgroundColors = [NSColor.windowBackgroundColor]
+        collectionView.backgroundColors = [NSColor.windowBackgroundColor]
 
         scrollView = NSScrollView(frame: view.bounds)
         scrollView.documentView = collectionView
