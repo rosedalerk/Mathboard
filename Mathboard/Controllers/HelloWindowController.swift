@@ -10,6 +10,7 @@ class HelloWindowController: NSWindowController {
     override func windowDidLoad() {
         super.windowDidLoad()
         
+        window?.level = .floating
         window?.minSize = CGSize(width: minWindowWidth,
                                  height: minWindowHeight)
         window?.maxSize = CGSize(width: maxWindowWidth,
