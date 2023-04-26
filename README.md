@@ -4,4 +4,6 @@ A math software keyboard for mac. Download [here.](https://github.com/rosedalerk
 
 ![Mathboard Pre-alpha](https://github.com/rosedalerk/Mathboard/blob/main/Mathboard%20Pre-alpha.png)
 
-Click to copy a symbol and paste it anywhere else on your computer. If apple gives you a hard time about opening the app, right click on it and then click "open".
+Click to copy a symbol. Then you can paste it anywhere else on your computer.
+
+If apple gives you a hard time about opening the app for the first time, right click on it and then click "open" :)
