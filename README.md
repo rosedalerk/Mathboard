@@ -1,5 +1,7 @@
 # Mathboard
-A math software keyboard for mac. Download [here.](https://github.com/rosedalerk/Mathboard/releases)
+A math software keyboard for mac, so you can type things like x∈ℝ much more quickly.
+
+Download [here.](https://github.com/rosedalerk/Mathboard/releases)
 
 
 ![Mathboard Pre-alpha](https://github.com/rosedalerk/Mathboard/blob/main/Mathboard%20Pre-alpha.png)
