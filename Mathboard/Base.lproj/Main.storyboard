@@ -706,13 +706,13 @@
             <objects>
                 <viewController id="WWh-WU-VNI" customClass="ExampleViewController" customModule="Mathboard" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="f7E-dR-ibC">
-                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <rect key="frame" x="0.0" y="0.0" width="635" height="419"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </view>
                 </viewController>
                 <customObject id="Dvs-YM-PxT" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="204" y="604"/>
+            <point key="canvasLocation" x="296.5" y="663.5"/>
         </scene>
     </scenes>
 </document>
