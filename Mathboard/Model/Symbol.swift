@@ -21,11 +21,14 @@ class Symbol {
 
 struct SymbolsData {
     static let symbols = [
-        Symbol(glyph: "ℝ", name: "Double-struck Capital R"),
-        Symbol(glyph: "ℂ", name: "Double-struck Capital C"),
-        Symbol(glyph: "𝔻", name: "Double-struck Capital D"),
         Symbol(glyph: "∎", name: "End of Proof"),
-        Symbol(glyph: "ℚ", name: "Double-struck Capital Q"),
+        Symbol(glyph: "ℕ", name: "Double-struck Capital N (Naturals)"),
+        Symbol(glyph: "ℤ", name: "Double-struck Capital Z (Integers)"),
+        Symbol(glyph: "ℚ", name: "Double-struck Capital Q (Rationals)"),
+        Symbol(glyph: "ℝ", name: "Double-struck Capital R (Reals)"),
+        Symbol(glyph: "ℂ", name: "Double-struck Capital C (Complex)"),
+        Symbol(glyph: "ℍ", name: "Double-struck Capital H (Quaternions)"),
+        Symbol(glyph: "𝔻", name: "Double-struck Capital D"),
         Symbol(glyph: "∞", name: "Infinity"),
         Symbol(glyph: "∈", name: "Element of"),
         Symbol(glyph: "≡", name: "Identical to"),
