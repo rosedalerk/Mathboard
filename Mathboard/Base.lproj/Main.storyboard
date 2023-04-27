@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
+        <deployment identifier="macosx"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="21701"/>
+        <capability name="Search Toolbar Item" minToolsVersion="12.0" minSystemVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -691,17 +693,34 @@
                         <rect key="screenRect" x="0.0" y="0.0" width="2048" height="1255"/>
                         <toolbar key="toolbar" implicitIdentifier="E63F34B2-5012-4B8C-B117-D4AADD093420" autosavesConfiguration="NO" allowsUserCustomization="NO" showsBaselineSeparator="NO" displayMode="iconAndLabel" sizeMode="regular" id="cZa-4V-Ol0">
                             <allowedToolbarItems>
+                                <toolbarItem implicitItemIdentifier="C85DAC17-2BAD-4186-8E03-ED1D0C415ECB" label="Toolbar Item" paletteLabel="Toolbar Item" tag="-1" bordered="YES" id="gQ0-sd-Mo7">
+                                    <size key="minSize" width="24" height="25"/>
+                                    <size key="maxSize" width="24" height="25"/>
+                                </toolbarItem>
                                 <toolbarItem implicitItemIdentifier="NSToolbarShowColorsItem" id="BKq-7y-6Qu"/>
                                 <toolbarItem implicitItemIdentifier="NSToolbarShowFontsItem" id="fUm-vz-rXc"/>
-                                <toolbarItem implicitItemIdentifier="NSToolbarPrintItem" id="Qk5-A8-Q5Z"/>
                                 <toolbarItem implicitItemIdentifier="NSToolbarSpaceItem" id="aOW-av-GPj"/>
+                                <searchToolbarItem implicitItemIdentifier="4CD78B61-0301-41D1-AF30-E571AD47BF50" label="Search" paletteLabel="Search" visibilityPriority="1001" id="Fzk-kq-xHF">
+                                    <nil key="toolTip"/>
+                                    <searchField key="view" verticalHuggingPriority="750" textCompletion="NO" id="eZw-PY-dsO">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="21"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <searchFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" usesSingleLineMode="YES" bezelStyle="round" sendsSearchStringImmediately="YES" id="MSj-bL-0E0">
+                                            <font key="font" usesAppearanceFont="YES"/>
+                                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                        </searchFieldCell>
+                                    </searchField>
+                                </searchToolbarItem>
                                 <toolbarItem implicitItemIdentifier="NSToolbarFlexibleSpaceItem" id="LyJ-G3-FXX"/>
                             </allowedToolbarItems>
                             <defaultToolbarItems>
+                                <toolbarItem reference="gQ0-sd-Mo7"/>
+                                <toolbarItem reference="LyJ-G3-FXX"/>
                                 <toolbarItem reference="BKq-7y-6Qu"/>
                                 <toolbarItem reference="fUm-vz-rXc"/>
                                 <toolbarItem reference="LyJ-G3-FXX"/>
-                                <toolbarItem reference="Qk5-A8-Q5Z"/>
+                                <searchToolbarItem reference="Fzk-kq-xHF"/>
                             </defaultToolbarItems>
                         </toolbar>
                         <connections>
@@ -716,10 +735,10 @@
             </objects>
             <point key="canvasLocation" x="30" y="214"/>
         </scene>
-        <!--Example View Controller-->
+        <!--Scroll Section View Controller-->
         <scene sceneID="uvq-YW-wjH">
             <objects>
-                <viewController id="WWh-WU-VNI" customClass="ExampleViewController" customModule="Mathboard" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="WWh-WU-VNI" customClass="ScrollSectionViewController" customModule="Mathboard" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="f7E-dR-ibC">
                         <rect key="frame" x="0.0" y="0.0" width="635" height="419"/>
                         <autoresizingMask key="autoresizingMask"/>

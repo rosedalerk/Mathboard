@@ -1,6 +1,6 @@
 import Cocoa
 
-class ExampleViewController: NSViewController {
+class MyViewController: NSViewController {
 
     private var collectionView: NSCollectionView!
     private var scrollView: NSScrollView!
@@ -38,16 +38,16 @@ class ExampleViewController: NSViewController {
     }
 }
 
-extension ExampleViewController: NSCollectionViewDataSource {
+extension MyViewController: NSCollectionViewDataSource {
     func collectionView(_ collectionView: NSCollectionView, numberOfItemsInSection section: Int) -> Int {
-        return SymbolsData.symbols.count // Set the number of items to display based on symbols
+        return setSymbols.symbols.count // Set the number of items to display based on set symbols
     }
 
     func collectionView(_ collectionView: NSCollectionView, itemForRepresentedObjectAt indexPath: IndexPath) -> NSCollectionViewItem {
-        let item = ExampleCollectionViewItem(text: SymbolsData.symbols[indexPath.item].glyph)
+        let item = ExampleCollectionViewItem(text: setSymbols.symbols[indexPath.item].glyph)
         collectionView.register(ExampleCollectionViewItem.self, forItemWithIdentifier: NSUserInterfaceItemIdentifier("ExampleCollectionViewItem"))
         
         return item
     }
-
 }
+
