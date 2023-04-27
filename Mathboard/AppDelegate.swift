@@ -32,5 +32,21 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     func applicationSupportsSecureRestorableState(_ app: NSApplication) -> Bool {
         return true
     }
+    
+    func applicationShouldHandleReopen(_ sender: NSApplication, hasVisibleWindows flag: Bool) -> Bool {
+        if !flag {
+            for window: NSWindow in sender.windows {
+                if let windowController = window.windowController {
+                    // Check if the window is an instance of your main window controller
+                    if windowController is HelloWindowController {
+                        window.makeKeyAndOrderFront(self)
+                        break
+                    }
+                }
+            }
+        }
+        return true
+    }
+
 }
 
