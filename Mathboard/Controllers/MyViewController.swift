@@ -3,7 +3,7 @@ import Cocoa
 class MyViewController: NSViewController {
 
     private var collectionView: NSCollectionView!
-    private var scrollView: NSScrollView!
+//    private var scrollView: NSScrollView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,21 +20,22 @@ class MyViewController: NSViewController {
         collectionView.register(ExampleCollectionViewItem.self, forItemWithIdentifier: NSUserInterfaceItemIdentifier("ExampleCollectionViewItem"))
         collectionView.dataSource = self
         collectionView.backgroundColors = [NSColor.windowBackgroundColor]
+        self.view.addSubview(collectionView)
+        
+//        scrollView = NSScrollView(frame: view.bounds)
+//        scrollView.documentView = collectionView
+//        scrollView.hasVerticalScroller = true
+//        scrollView.autohidesScrollers = true
 
-        scrollView = NSScrollView(frame: view.bounds)
-        scrollView.documentView = collectionView
-        scrollView.hasVerticalScroller = true
-        scrollView.autohidesScrollers = true
-
-        self.view.addSubview(scrollView)
-        scrollView.translatesAutoresizingMaskIntoConstraints = false
-
-        NSLayoutConstraint.activate([
-            scrollView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            scrollView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            scrollView.topAnchor.constraint(equalTo: view.topAnchor),
-            scrollView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
-        ])
+//        self.view.addSubview(scrollView)
+//        scrollView.translatesAutoresizingMaskIntoConstraints = false
+//
+//        NSLayoutConstraint.activate([
+//            scrollView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+//            scrollView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+//            scrollView.topAnchor.constraint(equalTo: view.topAnchor),
+//            scrollView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
+//        ])
     }
 }
 

@@ -3,7 +3,6 @@
     <dependencies>
         <deployment identifier="macosx"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="21701"/>
-        <capability name="Search Toolbar Item" minToolsVersion="12.0" minSystemVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -700,18 +699,6 @@
                                 <toolbarItem implicitItemIdentifier="NSToolbarShowColorsItem" id="BKq-7y-6Qu"/>
                                 <toolbarItem implicitItemIdentifier="NSToolbarShowFontsItem" id="fUm-vz-rXc"/>
                                 <toolbarItem implicitItemIdentifier="NSToolbarSpaceItem" id="aOW-av-GPj"/>
-                                <searchToolbarItem implicitItemIdentifier="4CD78B61-0301-41D1-AF30-E571AD47BF50" label="Search" paletteLabel="Search" visibilityPriority="1001" id="Fzk-kq-xHF">
-                                    <nil key="toolTip"/>
-                                    <searchField key="view" verticalHuggingPriority="750" textCompletion="NO" id="eZw-PY-dsO">
-                                        <rect key="frame" x="0.0" y="0.0" width="100" height="21"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <searchFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" usesSingleLineMode="YES" bezelStyle="round" sendsSearchStringImmediately="YES" id="MSj-bL-0E0">
-                                            <font key="font" usesAppearanceFont="YES"/>
-                                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                        </searchFieldCell>
-                                    </searchField>
-                                </searchToolbarItem>
                                 <toolbarItem implicitItemIdentifier="NSToolbarFlexibleSpaceItem" id="LyJ-G3-FXX"/>
                             </allowedToolbarItems>
                             <defaultToolbarItems>
@@ -720,7 +707,6 @@
                                 <toolbarItem reference="BKq-7y-6Qu"/>
                                 <toolbarItem reference="fUm-vz-rXc"/>
                                 <toolbarItem reference="LyJ-G3-FXX"/>
-                                <searchToolbarItem reference="Fzk-kq-xHF"/>
                             </defaultToolbarItems>
                         </toolbar>
                         <connections>

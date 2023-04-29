@@ -2,17 +2,17 @@ import Cocoa
 
 class SectionView: NSView {
     
-    init(title: String, color: NSColor) {
+    init(symbolCollection: SymbolCollection, color: NSColor) {
         super.init(frame: .zero)
-        configure(title: title, color: color)
+        configure(symbolCollection: symbolCollection, color: color)
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    private func configure(title: String, color: NSColor) {
-        let titleLabel = NSTextField(labelWithString: title)
+    private func configure(symbolCollection: SymbolCollection, color: NSColor) {
+        let titleLabel = NSTextField(labelWithString: symbolCollection.title)
         titleLabel.translatesAutoresizingMaskIntoConstraints = false
         addSubview(titleLabel)
         

@@ -25,6 +25,7 @@ class ScrollSectionViewController: NSViewController {
         let stackView = NSStackView()
         stackView.translatesAutoresizingMaskIntoConstraints = false
         stackView.orientation = .vertical
+        stackView.alignment = .leading
         stackView.spacing = 20
         
         scrollView.documentView = stackView
@@ -32,8 +33,9 @@ class ScrollSectionViewController: NSViewController {
         let sectionsData: [SymbolCollection] = SymbolsData.allCollections
         
         for sectionData in sectionsData {
-            let sectionView = SectionView(title: sectionData.title, color: .red)
+            let sectionView = SectionView(symbolCollection: sectionData, color: .red)
             stackView.addArrangedSubview(sectionView)
+            sectionView.widthAnchor.constraint(equalTo: stackView.widthAnchor).isActive = true // Set the section view's width equal to the stack view's width
         }
     }
 }
